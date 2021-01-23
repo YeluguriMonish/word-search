@@ -1,21 +1,30 @@
 import React from 'react';
-import Dropdown from './dropdown'
+import Dropdown from './dropdown';
+import './style.css';
 
 const gridSizeOptions = [
+  {value: '3', label: '3x3'},
+  {value: '5', label: '5x5'},
   {value: '10', label: '10x10'},
-  {value: '15', label: '15x15'},
-  {value: '20', label: '20x20'}
 ]
 
+var gridSize = "";
+
 function onChangeHandler(value) {
-  console.log(value);
+  gridSize = value;
+};
+function onClickHandler(value) {
+  console.log(gridSize);
 };
 
 function App() {
   return (
-    <>
+    <section className='main'>
       <Dropdown options={gridSizeOptions} onChangeHandler={onChangeHandler} />
-    </>
+      <button className='btn' onClick={onClickHandler}>
+        confirm
+      </button>
+    </section>
   );
 }
 
