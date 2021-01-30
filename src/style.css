@@ -83,3 +83,21 @@ body {
   cursor: pointer;
   transition: var(--transition);
 }
+
+textarea#puzzle-textarea {
+    display: block;
+    width: 99%;
+    min-width: 700px;
+    max-width: 100%;
+    min-height: 214px;
+    font-family: monospace;
+    font-size: 1.5rem;
+    letter-spacing: 20px;
+    line-height: 40px;
+    text-transform: uppercase;
+    overflow-x: auto;
+    white-space: pre;
+    word-wrap: normal;
+    border-radius: 0;
+    padding: 6px 16px;
+}
