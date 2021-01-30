@@ -1,21 +1,12 @@
 import React from 'react';
-import Dropdown from './dropdown'
+import Parent from './components/Parent';
+import './style.css';
 
-const gridSizeOptions = [
-  {value: '10', label: '10x10'},
-  {value: '15', label: '15x15'},
-  {value: '20', label: '20x20'}
-]
-
-function onChangeHandler(value) {
-  console.log(value);
-};
-
-function App() {
+const App = () => {
   return (
-    <>
-      <Dropdown options={gridSizeOptions} onChangeHandler={onChangeHandler} />
-    </>
+    <div className='main'>
+      <Parent />
+    </div>
   );
 }
 
