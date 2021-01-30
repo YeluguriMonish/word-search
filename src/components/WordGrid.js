@@ -16,7 +16,7 @@ export default class WordGrid extends Component {
     return (
       <>
         <form onSubmit={this.continue}>
-          <textarea id='puzzle-textarea' onChange={this.props.handleChange('wordGrid')} cols='130' rows='10' placeholder='enter word bank seperated by spaces'></textarea>
+          <textarea id='puzzle-textarea' onChange={this.props.handleChange('wordGrid')} cols='130' rows='10' placeholder='enter word grid'></textarea>
         </form>
         <button className='btn' onClick={this.continue}>
           start search

@@ -65,7 +65,7 @@ export class Parent extends Component {
   };
 
   render() {
-    const {step, wordGrid, wordCoordinates} = this.state;
+    const {step, wordGrid, wordCoordinates, gridSize} = this.state;
 
     switch (step) {
       case 1:
@@ -78,7 +78,7 @@ export class Parent extends Component {
         );
       case 3:
         return (
-          <WordGrid nextStep={this.startSearch} prevStep={this.prevStep} handleChange={this.handleTextChange} />
+          <WordGrid nextStep={this.startSearch} prevStep={this.prevStep} handleChange={this.handleTextChange} gridSize={this.gridSize} />
         );
       case 4:
         return (
